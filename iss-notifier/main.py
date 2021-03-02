@@ -5,8 +5,8 @@ import time
 
 MY_LAT = 55.890812
 MY_LONG = 37.614665
-email = "veklenko.sr@gmail.com"
-password = "stupidslimshady"
+email = "-"
+password = "-"
 
 
 def is_iss_overhead():
@@ -18,7 +18,7 @@ def is_iss_overhead():
     iss_latitude = float(data["iss_position"]["latitude"])
     iss_longitude = float(data["iss_position"]["longitude"])
 
-    if (MY_LAT -5 <= iss_latitude <= MY_LAT +5) and MY_LONG-5 <= iss_longitude <= MY_LONG +5:
+    if (MY_LAT - 5 <= iss_latitude <= MY_LAT + 5) and (MY_LONG - 5 <= iss_longitude <= MY_LONG + 5):
         return True
 
 
