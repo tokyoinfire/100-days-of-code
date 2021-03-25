@@ -10,6 +10,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\cookie-clicker\interaction.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\cookie-clicker\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\day-27\main.py">
           <value>
             <Attribute>
@@ -95,6 +109,13 @@
           </value>
         </entry>
         <entry key="\us-state-game\50_states.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\webscraping\main.py">
           <value>
             <Attribute>
               <option name="separator" value="," />
