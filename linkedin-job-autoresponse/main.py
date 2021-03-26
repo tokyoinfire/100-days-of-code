@@ -6,9 +6,9 @@ from selenium.common.exceptions import NoSuchElementException
 chrome_driver_path = r"C:\Users\1\Desktop\chrome_driver\chromedriver.exe"
 driver = webdriver.Chrome(executable_path = chrome_driver_path)
 URL = "https://www.linkedin.com/jobs/search/?f_AL=true&geoId=107245803&keywords=Python-%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%87%D0%B8%D0%BA&location=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F"
-LOGIN = "sveklenko15@gmail.com"
-PASSWORD = "Ei5idLXMxEd26VQ"
-PHONE = "9257269079"
+LOGIN = ""
+PASSWORD = ""
+PHONE = ""
 
 driver.get(URL)
 sign_in_button = driver.find_element_by_link_text("Войти")
