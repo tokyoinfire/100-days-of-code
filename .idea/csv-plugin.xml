@@ -45,6 +45,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\instagram-follower-count\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\iss-notifier\main.py">
           <value>
             <Attribute>
