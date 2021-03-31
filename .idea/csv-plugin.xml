@@ -108,6 +108,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\renting-research\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\us-sate-game\main.py">
           <value>
             <Attribute>
