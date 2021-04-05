@@ -38,6 +38,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\flask-site\server.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\flask-site\templates\index.html">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\habit-tracker\main.py">
           <value>
             <Attribute>
