@@ -10,6 +10,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\bookshelf\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\cookie-clicker\interaction.py">
           <value>
             <Attribute>
