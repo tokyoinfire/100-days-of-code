@@ -4,66 +4,101 @@
 <head>
   <meta charset="utf-8">
   <title>North</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Yantramanav:wght@500&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+  <!-- local css -->
   <link rel="stylesheet" href="css/styles.css">
-  
+
+  <!-- awesomefont icons -->
+  <script src="https://kit.fontawesome.com/bd2255277d.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
   <section id="title">
+    <div class="container-fluid">
 
-    <!-- Nav Bar -->
+      <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-light ">
-      <a class="navbar-brand" href="">North</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="">North</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
           <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="">Contact</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="">Pricing</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="">Download</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#footer">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta">Download</a>
+            </li>
           </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1>Meet new and interesting people in beautiful places.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i>
+            Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-img" src="images/ali-kazal-vq02t0_rzns-unsplash.jpg" alt="img">
+        </div>
       </div>
-  </nav>
-
-
-    <!-- Title -->
-  <div class="row">
-    <div class="col-lg-6">
-      <h1>Meet new and interesting people in beautiful places.</h1>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
     </div>
-    <div class="col-lg-6">
-      <img src="images/gettyimages-1031972950-612x612.jpg" alt="img">
-    </div>
-  </div>
   </section>
 
 
   <!-- Features -->
 
   <section id="features">
-
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your child could do it.</p>
-
-    <h3>Different counries</h3>
-    <p>Finest sky that all yours all aroud the world.</p>
-
-    <h3>Guaranteed to work.</h3>
-    <p>Find the place you fall in love for the rest of your life.</p>
-
+    <div class="row">
+      <div class="col-lg-4 feature-box">
+        <i class="fa-4x far fa-check-circle"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your child could do it.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-4x fas fa-bullseye"></i>
+        <h3>Different countries</h3>
+        <p>Finest sky that all yours all aroud the world.</p>
+      </div>
+      <div class="col-lg-4 feature-box">
+        <i class="fa-4x fas fa-snowflake"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the place you fall in love for the rest of your life.</p>
+      </div>
+    </div>
   </section>
 
 
@@ -71,10 +106,32 @@
 
   <section id="testimonials">
 
-    <h2>I no longer have to spend time looking for countries for vacation. I've found the best place I've ever seen.</h2>
-    <img src="images/tommy.jpg" alt="dog-profile">
-    <em>Tommy, New York</em>
-
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I no longer have to spend time looking for countries for vacation. I've found the best place I've ever
+            seen.
+          </h2>
+          <img class="testimonial-img" src="images/tommy.jpg" alt="dog-profile">
+          <em>Tommy, New York</em>
+        </div>
+        <div class="carousel-item">
+          <h2>I've bought Chile tour last month. And it was really great! I've met so many great people there. I am
+            your fan forever!
+          </h2>
+          <img class="testimonial-img" src="images/sean-pierce-AmkpzghJ5eo-unsplash.jpg" alt="dog-profile">
+          <em>Lily, Illinois</em>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
   </section>
 
@@ -85,41 +142,69 @@
     <img src="images/techcrunch.png" alt="tc-logo">
     <img src="images/tnw.png" alt="tnw-logo">
     <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
-
   </section>
 
 
   <!-- Pricing -->
 
+
+
+
   <section id="pricing">
 
-    <h2>A Plan for Every traveller needs</h2>
+    <h2>A Plan for Every Traveller's needs</h2>
     <p>Simple and affordable price plans for your and your friends.</p>
 
+    <div class="row">
+      <div class=" picing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Chile</h3>
+          </div>
+          <div class="card-body">
+            <h2>$2999</h2>
+            <p>5 Camping places</p>
+            <p>10 days of living in mountains</p>
+            <p>15 people</p>
+            <p>Free transfer</p>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block">Sign Up</button>
+          </div>
+        </div>
+      </div>
 
-    <h3>Chile</h3>
-    <h2>$2999</h2>
-    <p>5 Camping places</p>
-    <p>10 days of living in mountains</p>
-    <p>Free transfer</p>
-    <button type="button">Sign Up</button>
+      <div class="picing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Norway</h3>
+          </div>
+          <div class="card-body">
+            <h2>$3999</h2>
+            <p>10 Camping places</p>
+            <p>15 days of living in mountains</p>
+            <p>10 people</p>
+            <p>Free transfer</p>
+            <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="picing-col col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>New Zeland</h3>
+          </div>
+          <div class="card-body">
+            <h2>$4999</h2>
+            <p>12 Camping places</p>
+            <p>21 days of living in mountains</p>
+            <p>5 people</p>
+            <p>Free transfer</p>
+            <button type="button" class="btn btn-outline-dark btn-lg btn-block">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <h3>Norway</h3>
-    <h2>$3999</h2>
-    <p>10 Camping places</p>
-    <p>15 days of living in mountains</p>
-    <p>Free transfer</p>
-    <button type="button">Sign Up</button>
-
-
-    <h3>New Zeland</h3>
-    <h2>$4999</h2>
-    <p>12 Camping places</p>
-    <p>21 days of living in mountains</p>
-    <p>Free transfer</p>
-    <button type="button">Sign Up</button>
 
   </section>
 
@@ -129,8 +214,9 @@
   <section id="cta">
 
     <h3>Find the True Love of Your Travelling Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i>
+      Download</button>
 
   </section>
 
@@ -139,13 +225,16 @@
 
   <footer id="footer">
 
+    <i class="social-icon fab fa-facebook-square"></i>
+    <i class="social-icon fab fa-twitter-square"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon far fa-envelope"></i>
     <p>© Copyright 2018 North</p>
 
   </footer>
 
 
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+
 </html>
