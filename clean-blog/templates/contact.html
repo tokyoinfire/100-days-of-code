@@ -11,7 +11,7 @@
     <title>Clean Blog - Start Bootstrap Theme</title>
 
     <!-- Bootstrap core CSS -->
- <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom fonts for this template -->
     <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
@@ -26,34 +26,6 @@
 
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
-        <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse"
-                type="button">
-            Menu
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="post.html">Sample Post</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 {% include "header.html" %}
 
@@ -64,7 +36,11 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="page-heading">
+                    {% if msg_sent: %}
+                    <h1>Successfully sent your message</h1>
+                    {% else: %}
                     <h1>Contact Me</h1>
+                    {% endif %}
                     <span class="subheading">Have questions? I have answers.</span>
                 </div>
             </div>
@@ -81,11 +57,12 @@
             <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
             <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
             <!-- To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
-            <form id="contactForm" name="sentMessage" novalidate>
+            <form action="{{ url_for('contact') }}" id="contactForm" method="post" name="sentMessage" novalidate>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
                         <label>Name</label>
-                        <input class="form-control" data-validation-required-message="Please enter your name." id="name" placeholder="Name" required
+                        <input class="form-control" data-validation-required-message="Please enter your name." id="name"
+                               name="name" placeholder="Name" required
                                type="text">
                         <p class="help-block text-danger"></p>
                     </div>
@@ -93,24 +70,27 @@
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
                         <label>Email Address</label>
-                        <input class="form-control" data-validation-required-message="Please enter your email address." id="email" placeholder="Email Address" required
-                               type="email">
+                        <input class="form-control" data-validation-required-message="Please enter your email address."
+                               id="email" name="email" placeholder="Email Address"
+                               required type="email">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Phone Number</label>
-                        <input class="form-control" data-validation-required-message="Please enter your phone number." id="phone" placeholder="Phone Number" required
-                               type="tel">
+                        <input class="form-control" data-validation-required-message="Please enter your phone number."
+                               id="phone" name="phone" placeholder="Phone Number"
+                               required type="tel">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="control-group">
                     <div class="form-group floating-label-form-group controls">
                         <label>Message</label>
-                        <textarea class="form-control" data-validation-required-message="Please enter a message." id="message" placeholder="Message" required
-                                  rows="5"></textarea>
+                        <textarea class="form-control" data-validation-required-message="Please enter a message."
+                                  id="message" name="message" placeholder="Message"
+                                  required rows="5"></textarea>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -121,6 +101,7 @@
         </div>
     </div>
 </div>
+
 
 <hr>
 
