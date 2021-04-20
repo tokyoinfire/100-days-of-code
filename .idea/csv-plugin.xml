@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\coffe-and-wifi\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\cookie-clicker\interaction.py">
           <value>
             <Attribute>
@@ -116,6 +123,13 @@
           </value>
         </entry>
         <entry key="\mail-sender\quotes.txt">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\main.py">
           <value>
             <Attribute>
               <option name="separator" value="," />
