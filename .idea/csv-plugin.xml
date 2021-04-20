@@ -59,6 +59,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\flask-wtforms\main.py">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\habit-tracker\main.py">
           <value>
             <Attribute>
